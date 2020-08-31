@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>48.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default,lightning__RecordPage,lightning__AppPage">
+            <property label="Object API Name" name="objApiNameDesignProperty" type="String" default="Contact" description="Provide the sObject API name" required="true"/>
+            <property label="Fieldset Name" name="fieldsetNameDesignProperty" type="String" default="ContactRecordEditForm" description="Provide the fieldset name for the sObject" required="true"/>
+            <property label="Field API Names" name="fieldsNameDesignProperty" type="String" default="OtherCity,OtherCountry" description="Provide the field api names which will be hidden on load of the componenet"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

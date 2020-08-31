@@ -1,0 +1,129 @@
+<template>
+    <header>
+        <div class="logo">
+            <img src={logoImagePath} alt="My Logo">
+        </div>
+        <button class="nav-toggle" aria-label="toggle navigation">
+            <span class="hamburger"></span>
+        </button>
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__item">
+                    <a href="#home" class="nav__link">Home</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#services" class="nav__link">My Services</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#aboutMe" class="nav__link">About Me</a>
+                </li>
+                <li class="nav__item">
+                    <a href="#work" class="nav__link">My Work</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro" data-id="home">
+        <h1 class="section__title section__title--intro">
+            Hi, I am <strong>Bikram</strong>
+        </h1>
+        <p class="section__subtitle section__subtitle--intro"> Salesforce Developer</p>
+        <div class="intro__image">
+            <img src={myPicturePath} alt="A picture of Bikram" class="intro__img">
+        </div>
+    </section>
+
+    <!-- My Services -->
+    <section class="my-servcies" data-id="services">
+        <h2 class="section__title section__title--services">What I do</h2>
+        <div class="services">
+            <div class="service">
+                    <h3>Design+Development</h3>
+                    <p>qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
+                        qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
+                        qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
+                        qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
+                    </p>
+            </div><!-- Close Service-->
+            <div class="service">
+                    <h3>ECommerce</h3>
+                    <p>qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
+                        qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
+                        qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
+                    </p>
+            </div><!-- Close Service-->
+            <div class="service">
+                    <h3>WordPress</h3>
+                    <p>qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
+                        qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
+                        qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
+                        qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
+                        qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
+                        qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzxcvbnm
+                    </p>
+            </div><!-- Close Service-->
+        </div><!-- Close Services-->
+        <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About Me -->
+    <section class="about-me" id="aboutMe">
+        <h2 class="section__title section__title--about">Who I am</h2>
+        <p class="section__subtitle section__subtitle--about">Designer & developer based out of Bangalore, India</p>
+
+        <div class="about-me__body">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                laboris nisi ut aliquip ex ea commodo consequat.</p>
+        </div>
+
+        <img src={aboutMeImgPath} alt="alternate picture" class="about-me__img">
+    </section>
+
+    <!-- My Work -->
+    <section class="about-me" id="work">
+        <h2 class="section__title">My Work</h2>
+        <p class="section__subtitle"></p>
+
+        <div class="portfolio">
+            <!-- Portfolio Item 01-->
+            <a href="#" class="portfolio__item">
+                <img src={portfolioImagePath} alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio Item 02-->
+            <a href="#" class="portfolio__item">
+                <img src={portfolioImagePath} alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio Item 03-->
+            <a href="#" class="portfolio__item">
+                <img src={portfolioImagePath} alt="" class="portfolio__img">
+            </a>
+
+            <!-- Portfolio Item 04-->
+            <a href="#" class="portfolio__item">
+                <img src={portfolioImagePath} alt="" class="portfolio__img">
+            </a>
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <a href="mailto:bikrambehera7@gmail.com" class="footer__link">bikrambehera7@gmail.com</a>
+        <ui class="social-list">
+            <li class="social-list__item"><a class="social-list__link" href="https://codepen.io">a</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://dribble.com">b</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://twitter.com">c</a></li>
+            <li class="social-list__item"><a class="social-list__link" href="https://github.com">d</a></li>
+        </ui>
+    </footer>
+</template>

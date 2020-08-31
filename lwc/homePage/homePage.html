@@ -1,0 +1,87 @@
+<template>
+    <!-- nav bar -->
+    <div class="navbar">
+        <div class="navbar-center">
+            <span class="nav-icon">
+                <i class="fas fa-bars"></i>
+            </span>
+            <!-- <img src="./images/logo.svg" alt="store logo"> -->
+            <img src={logoImagePath} alt="store logo">
+            <div data-key="cartbtn" class="cart-btn">
+                <span class="nav-icon">
+                    <i class="fas fa-cart-plus"></i>
+                </span>
+                <div class="cart-items">0</div>
+            </div>
+        </div>
+    </div>
+    <!-- nav bar -->
+    <!-- Hero -->
+    <header class="hero" style={heroStyle}>
+        <div class="banner">
+            <h1 class="banner-title">Furniture Collection</h1>
+            <button class="banner-btn">Shop Now</button>
+        </div>
+    </header>
+    <!-- Hero -->
+    <!-- Products -->
+    <section class="products">
+        <div class="section-title">
+            <h2>Our Products</h2>
+        </div>
+        <div class="products-center" lwc:dom="manual">
+                <!-- Single Product 
+                    Products DOM inserted dynamically from Javascript USE CASE OF lwc:dom="manual"
+                Single Product  -->
+        </div>
+        <!-- <div class="products-center">
+            <template for:each={productsArray} for:item="prd">
+                Single Product
+                <article key={prd.Id} class="product">
+                    <div class="img-container">
+                        <img src={prd.image} alt="product" class="product-img">
+                        <button class="bag-btn" data-id={prd.id}>
+                            <i class="fas fa-shopping-cart"></i>
+                            add to bag
+                        </button>
+                    </div>
+                    <h3>{prd.title}</h3>
+                    <h4>${prd.price}</h4>
+                </article>
+                Single Product
+            </template>
+        </div> -->
+    </section>
+    <!-- Products -->
+    <!-- Cart -->
+    <div class="cart-overlay">
+        <div class="cart">
+            <span class="close-cart">
+                <i class="fas fa-window-close"></i>
+            </span>
+            <h2>your cart</h2>
+            <div class="cart-content" lwc:dom="manual">
+                <!-- Cart Item -->
+                <!-- <div class="cart-item" >
+                     <img src=${item.image} alt="product">
+                <div>
+                    <h4>${item.title}</h4>
+                    <h5>$${item.price}</h5>
+                    <span class="remove-item" data-id=${item.id}>remove</span>
+                </div>
+                <div>
+                    <i class="fas fa-chevron-up" data-id=${item.id}></i>
+                        <p class="item-amount">${item.amount}</p>
+                    <i class="fas fa-chevron-down" data-id=${item.id}></i>
+                </div> 
+                </div> -->
+                <!-- Cart Item -->
+            </div>
+            <div class="cart-footer">
+                <h3>Your Total : $ <span class="cart-total">0</span></h3>
+                <button class="clear-cart banner-btn">clear cart</button>
+            </div>
+        </div>
+    </div>
+    <!-- Cart -->
+</template>

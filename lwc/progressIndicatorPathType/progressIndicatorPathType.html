@@ -1,0 +1,31 @@
+<template>
+    <div class="slds-hide">
+        {objApiNameDesignProperty} {fieldsetNameDesignProperty} {fieldsNameDesignProperty}
+    </div>
+    <lightning-progress-indicator current-step={currentStep} type="path" variant="base">
+        <lightning-progress-step label="Step 1" value="1" data-key="1" onclick={handlePathClick}>
+        </lightning-progress-step>
+        <lightning-progress-step label="Step 2" value="2" data-key="2" onclick={handlePathClick}>
+        </lightning-progress-step>
+        <lightning-progress-step label="Step 3" value="3" data-key="3" onclick={handlePathClick}>
+        </lightning-progress-step>
+        <lightning-progress-step label="Step 4" value="4" data-key="4" onclick={handlePathClick}>
+        </lightning-progress-step>
+        <lightning-progress-step label="Step 5" value="5" data-key="5" onclick={handlePathClick}>
+        </lightning-progress-step>
+    </lightning-progress-indicator>
+
+    <template if:true={step1}>
+        <c-record-view-edit-form obj-api-name-design-property={objApiNameDesignProperty}
+            fieldset-name-design-property={fieldsetNameDesignProperty}
+            fields-name-design-property={fieldsNameDesignProperty}></c-record-view-edit-form>
+    </template>
+
+    <template if:true={step2}>Step 2</template>
+
+    <template if:true={step3}>Step 3</template>
+
+    <template if:true={step4}>Step 4</template>
+
+    <template if:true={step5}>Step 5</template>
+</template>

@@ -1,0 +1,43 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/aboutMe": [
+                "aboutMe/aboutMe.js"
+            ],
+            "c/homePage": [
+                "homePage/homePage.js"
+            ],
+            "c/progressIndicatorPathType": [
+                "progressIndicatorPathType/progressIndicatorPathType.js"
+            ],
+            "c/recordViewEditForm": [
+                "recordViewEditForm/recordViewEditForm.js"
+            ],
+            "c/serviceWorkerHelper": [
+                "serviceWorkerHelper/serviceWorkerHelper.js"
+            ],
+            "c/tetrisGame": [
+                "tetrisGame/tetrisGame.js"
+            ],
+            "c/FontAwesome": [
+                "../staticresources/FontAwesome/FontAwesome.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    },
+    "paths": {
+        "c/*": [
+            "*"
+        ]
+    }
+}

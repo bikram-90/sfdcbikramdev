@@ -1,0 +1,18 @@
+<template>
+  <div class="slds-hide">
+    {objApiNameDesignProperty} {fieldsetNameDesignProperty}
+  </div>
+
+  <lightning-record-edit-form record-id={recordId} object-api-name={objApiNameDesignProperty} onload={handleLoad}
+    onsubmit={handleSubmit} onsuccess={handleSuccess} onerror={handleError}>
+    <template for:each={fieldAPINameList} for:item="fieldAPIName">
+      <ul key={fieldAPIName}>
+        <lightning-input-field data-id={fieldAPIName} field-name={fieldAPIName} variant="label-inline"
+          onchange={handleFieldChange}></lightning-input-field>
+      </ul>
+    </template>
+
+    <lightning-button type="submit" name="submit" label="Create">
+    </lightning-button>
+  </lightning-record-edit-form>
+</template>
