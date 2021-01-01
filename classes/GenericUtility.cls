@@ -13,6 +13,6 @@ public class GenericUtility {
         //List<Schema.FieldSetMember> fieldSetMemberList =  fieldSetObj.getFields();
         //system.debug('fieldSetMemberList ====>' + fieldSetMemberList);  
         return fieldSetObj.getFields(); 
-    } 
+    }  
 
 }
